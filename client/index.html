@@ -1,0 +1,52 @@
+<html lang="es" ng-app="rechouchios">
+
+<head>
+	<title>Rechouchíos</title>
+	<meta charset="utf-8" />
+	<meta lang="gl" />
+	<meta name="description" content="Twitter client to practice with AngularJS, NodeJS, Express and MongoDB." />
+	<meta name="author" content="Alejo Pacín Jul" />
+	<meta name="application-name" content="Rechouchios" />
+	<meta name="Keywords" content="MEAN, MongoDB, AngularJS, Express, Node.js, Twitter, Bootstrap" />
+	<link rel="author" href="https://es.linkedin.com/in/alejopj" />
+	<!-- Bootstrap core CSS -->
+	<link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation" ng-controller="MenuCtrl as menu">
+		<div class="navbar-inner">
+			<div class="container">
+				<ul class="nav navbar-nav">
+					<li ng-class="{ active: menu.isActive('home') }">
+						<a ui-sref="home">Inicio</a>
+					</li>
+					<li ng-class="{ active: menu.isActive('browser') }">
+						<a ui-sref="browser">Buscador</a>
+					</li>
+					<li ng-class="{ active: menu.isActive('about') }">
+						<a ui-sref="about">Sobre</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+    
+	<!-- ui-router directive -->
+	<div class="container text-center" style="padding-top:50px;" ui-view>
+		<!-- Dynamic content goes here -->
+	</div>
+    
+	<!-- JavaScript References -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
+	<!-- ui-router instead of AngularJS router -->
+	<script src="http://angular-ui.github.io/ui-router/release/angular-ui-router.min.js"></script>
+	<script src="app.js"></script>
+	<script src="menuCtrl.js"></script>
+	<script src="homeCtrl.js"></script>
+    <script src="browserCtrl.js"></script>
+    <script src="aboutCtrl.js"></script>
+    <script src="notFoundCtrl.js"></script>
+</body>
+
+</html>
