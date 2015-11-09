@@ -1,0 +1,32 @@
+{
+  "name": "rechouchios",
+  "version": "1.0.0",
+  "description": "Twitter client to practice with AngularJS, NodeJS, Express and MongoDB.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alejopj/rechouchios.git"
+  },
+  "keywords": [
+    "angularjs",
+    "nodejs",
+    "express",
+    "mongodb"
+  ],
+  "author": "Alejo Pacin Jul <alejopj@gmail.com>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/alejopj/rechouchios/issues"
+  },
+  "homepage": "https://github.com/alejopj/rechouchios#readme",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3",
+    "jwt-simple": "^0.3.1",
+    "morgan": "^1.6.1",
+    "twit": "^2.1.1"
+  }
+}
