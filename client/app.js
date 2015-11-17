@@ -5,25 +5,25 @@ angular.module('rechouchios').config(function ($stateProvider) {
         .state('index', {
 			url: '',
 			controller: 'HomeCtrl as home',
-			templateUrl: 'home.html'
+			templateUrl: 'views/home.html'
 		})
 		.state('home', {
 			url: '/',
 			controller: 'HomeCtrl as home',
-			templateUrl: 'home.html'
+			templateUrl: 'views/home.html'
 		})
 		.state('browser', {
 			url: '/browser',
 			controller: 'BrowserCtrl as browser',
-			templateUrl: 'browser.html'
+			templateUrl: 'views/browser.html'
 		})
 		.state('about', {
 			url: '/about',
 			controller: 'AboutCtrl as about',
-			templateUrl: 'about.html'
+			templateUrl: 'views/about.html'
 		}).state('not-found', {
 			url: '*path',
             controller: 'NotFoundCtrl as notFound',
-			templateUrl: 'not-found.html'
+			templateUrl: 'views/not-found.html'
 		});
 });
