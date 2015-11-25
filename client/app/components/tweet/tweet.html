@@ -1,0 +1,26 @@
+<div class="tweet">
+    <div class="content">
+        <div class="header">
+            <a class="account-group" ng-href="{{accountUrl}}">
+                <img class="avatar" ng-src="{{avatarUrl}}"></img>
+                <strong class="fullname">
+                    {{fullname}}
+                </strong>
+                <span></span>
+                <span class="username">
+                    <s>@</s><b>{{username}}</b>
+                </span>
+            </a>
+            <small class="time">
+                <a class="tweet-timestamp" ng-href="{{tweeUrl}}">
+                    <span class="timestamp">
+                        {{timestamp}}
+                    </span>
+                </a>
+            </small>
+        </div>
+        <p class="tweet-text" lang="{{lang}}">
+            {{text}}
+        </p>
+    </div>
+</div>
