@@ -1,12 +1,14 @@
 (function () {
+    
 	angular.module('rcTweet', [])
-		.directive('rcTweet', tweet);
+        .directive('rcTweet', tweet);
 
 	function tweet() {
 		return {
             restrict: 'AE',
 			templateUrl: './app/components/tweet/tweet.html',
             scope: {
+                tweet: '=',
                 accountUrl: '@',
 				avatarUrl: '@',
                 fullname: '@',
